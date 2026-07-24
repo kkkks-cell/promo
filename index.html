@@ -175,8 +175,8 @@ document.getElementById('tcards').innerHTML = DATA.bands.map((b, bi) => {
       <div class="rdetail"><div class="rdetail-in">${detail}</div></div>
     </div>`;
   }).join('');
-  return `<div class="tcard${bi === 0 ? ' open' : ''}">
-    <button class="thead" type="button" aria-expanded="${bi === 0}">
+  return `<div class="tcard">
+    <button class="thead" type="button" aria-expanded="false">
       <span class="l"><span class="band">${esc(b.band)}</span><span class="time">${esc(b.time)}</span></span>
       ${CHEV}
     </button>
